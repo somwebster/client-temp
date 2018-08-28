@@ -18,7 +18,7 @@ $(document).ready(function(){
 	/* ========================================================================= */
 
 	$(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
+        if ($(window).scrollTop() > 300) {
             $("#navigation").css("background-color","white");
         } else {
             $("#navigation").css("background-color","rgba(243, 245, 255, 0.56)");
