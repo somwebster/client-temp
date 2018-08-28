@@ -5,6 +5,8 @@
 jQuery(window).load(function(){
 
 	$("#preloader").fadeOut("slow");
+	
+	
 
 });
 
@@ -15,7 +17,13 @@ $(document).ready(function(){
 	/*	Menu item highlighting
 	/* ========================================================================= */
 
-	
+	$(window).scroll(function () {
+        if ($(window).scrollTop() > 400) {
+            $("#navigation").css("background-color","white");
+        } else {
+            $("#navigation").css("background-color","rgba(243, 245, 255, 0.56)");
+        }
+    });
 	/* ========================================================================= */
 	/*	Fix Slider Height
 	/* ========================================================================= */	
