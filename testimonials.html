@@ -33,19 +33,22 @@
 			<img src="img/preloader.gif" alt="Preloader">
 		</div>
 
-    <header id="navigation" class="navbar-fixed-top navbar" style="box-shadow: rgba(0, 0, 0, 0.27) 7px 8px 11px 2px; background-color: rgba(214, 26, 95, 0.37);">
+    <header id="navigation" class="navbar-fixed-top navbar" style="box-shadow: rgba(0, 0, 0, 0.27) 7px 8px 11px 2px;">
           <div class="container">
               <div class="navbar-header">
     	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars fa-2x"></i>
+                        <i class="fa fa-bars fa-2x" style=" color: #1514149c;"></i>
                     </button>
 
                     <a class="navbar-brand" href="#body">
-						<h3 id="logo" style="    padding-top: 15px;
-    padding-left: 15px;
-    font-family: -webkit-pictograph;">
-							Saadhna Suitings
+						<h3 id="logo" style="padding-left: 2px;
+    position: absolute;
+    padding-top: 5px;"
+ >
+    <img src="img/logo.png" alt="" style="
+max-width: 29%;
+">
 						</h3>
 					</a>
 					<!-- /logo -->
@@ -55,13 +58,13 @@
                 <nav class="collapse navbar-collapse navbar-right" role="navigation">
                     <ul id="nav" class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
-                        <li class="current"><a href="#body">About us</a></li>
+                        <li><a href= "about.html" >About us</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li class="current"><a href="#body">Testimonials</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-				<!-- /main nav -->
+
 
             </div>
         </header>
@@ -152,8 +155,13 @@
     <center>
 					<div class="col-md-12 col-sm-12 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
 						<div class="footer-single">
-							<img src="img/footer-logo.png" alt="">
-							<p>Welcome to the official website of saadhna suitings.Sadhana Suiting is one of the leading manufacturers of textiles established in Bhilwara, Rajasthan (INDIA). Since 1994, we are known for our quality performance throughout the India and global market.</p>	</div>
+              <img src="img/logo.png" alt="" style="
+      max-width: 29%;
+  ">
+							<p style="
+    color:  black;
+    font-weight: 500;
+">Welcome to the official website of saadhna suitings.Sadhana Suiting is one of the leading manufacturers of textiles established in Bhilwara, Rajasthan (INDIA). Since 1994, we are known for our quality performance throughout the India and global market.</p>	</div>
 					</div>
   </center>
 
@@ -163,8 +171,14 @@
 
 				<div class="row">
 					<div class="col-md-12">
-						<p class="copyright text-center">
-							Copyright © 2018 <a href="http://themefisher.com/">Saadhna Suitings</a>. All rights reserved. Designed & developed by <font color= lime> Fnplus </font>
+						<p class="copyright text-center" style="
+    color:  black;
+    font-weight: 500;
+">
+							Copyright © 2018 <a href="http://themefisher.com/" style="
+    color:  red;
+    font-weight: 500;
+">Saadhna Suitings</a>. All rights reserved. Designed & developed by <font color= lime> Fnplus </font>
 						</p>
 					</div>
 				</div>
@@ -214,61 +228,6 @@
 		<!-- Custom Functions -->
         <script src="js/custom.js"></script>
 
-		<script type="text/javascript">
-			$(function(){
-				/* ========================================================================= */
-				/*	Contact Form
-				/* ========================================================================= */
 
-				$('#contact-form').validate({
-					rules: {
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						message: {
-							required: true
-						}
-					},
-					messages: {
-						name: {
-							required: "come on, you have a name don't you?",
-							minlength: "your name must consist of at least 2 characters"
-						},
-						email: {
-							required: "no email, no message"
-						},
-						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
-						}
-					},
-					submitHandler: function(form) {
-						$(form).ajaxSubmit({
-							type:"POST",
-							data: $(form).serialize(),
-							url:"process.php",
-							success: function() {
-								$('#contact-form :input').attr('disabled', 'disabled');
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$(this).find(':input').attr('disabled', 'disabled');
-									$(this).find('label').css('cursor','default');
-									$('#success').fadeIn();
-								});
-							},
-							error: function() {
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$('#error').fadeIn();
-								});
-							}
-						});
-					}
-				});
-			});
-		</script>
     </body>
 </html>
