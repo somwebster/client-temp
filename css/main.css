@@ -25,7 +25,7 @@ figure, p {
 }
 
 a {
-    color: #fff;
+    color: black;
 
     -webkit-transition: all .3s ease-in 0s;
        -moz-transition: all .3s ease-in 0s;
