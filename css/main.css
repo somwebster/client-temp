@@ -25,7 +25,7 @@ figure, p {
 }
 
 a {
-    color: black ;
+    color: #fff;
 
     -webkit-transition: all .3s ease-in 0s;
        -moz-transition: all .3s ease-in 0s;
@@ -44,7 +44,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: red;
+    color: #6CB670;
 }
 
 h1, h2, h3,
@@ -79,7 +79,7 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: red;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -305,9 +305,9 @@ top: -8px;
 }
 
 .service-icon {
-  border: 1px solid #0eb493;
+  border: 1px solid red;
   border-radius: 50%;
-  color: #0eb493;
+  color: red;
   float: left;
   padding: 10px 13px;
 }
@@ -352,7 +352,7 @@ top: -8px;
 
 .work-filter ul li a:hover,
 .work-filter ul li a.active {
-  background-color: #0eb493;
+  background-color: red;
   border-radius: 6px;
   color: #fff;
   padding: 5px 17px;
